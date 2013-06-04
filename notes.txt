@@ -1,0 +1,12 @@
+CURRENT SYSTEM
+1. Email with link to signup form (formstack) (thinkful billing)
+	(https://www.formstack.com/forms/thinkful-tf39670)
+2. Thinkful receives email notification (new credit card)
+3. Zoho: switch status to "Closed - CC on file"
+4. Send them email which has enrollment form (formstack)
+	(https://www.formstack.com/forms/thinkful-thinkful_enrollment_form)
+5. Information propagated to Google Spreadsheet
+
+Everything should be triggered after the signup form
+
+Still receive email about CC signup and enrollment form

@@ -1,0 +1,60 @@
+<form id='personal-form'>
+	<div class='form-row'>
+		<span>First Name</span>
+		<input type='text' size='20' id='firstname' required>
+	</div>
+
+	<div class='form-row'>
+		<span>Last Name</span>
+		<input type='text' size='20' id='lastname' required>
+	</div>
+
+	<div class='form-row'>
+		<span>Email Address</span>
+		<input type='email' size='20' id='email' required>
+	</div>
+</form>
+
+<!-- <form id='payment-form'>
+	<span>{{errorMessage}}</span>
+
+	<div class='form-row'>
+		<span>Card Number</span>
+		<input type='text' size='20' ng-model='card.number' data-stripe='number' required>
+	</div>
+
+	<div class='form-row'>
+		<span>CVC</span>
+		<input type='text' size='4' ng-model='card.cvc' data-stripe='cvc' required>
+	</div>
+
+	<div class='form-row'>
+		<span>Expiration Date (MM/YYYY)</span>
+		<input type='text' size='2' ng-model='card["exp-month"]' data-stripe='exp-month' required>
+		<span> / </span>
+		<input type='text' size='4' ng-model='card["exp-year"]' data-stripe='exp-year' required>
+	</div>
+	<button ng-click='submit()' ng-disabled='hiddenButton || form.$invalid'>Submit</button>
+</form> -->
+
+<form id='payment-form'>
+	<span id='errmess'>{{errorMessage}}</span>
+
+	<div class='form-row'>
+		<span>Card Number</span>
+		<input type='text' size='20' data-stripe='number' required>
+	</div>
+
+	<div class='form-row'>
+		<span>CVC</span>
+		<input type='text' size='4' data-stripe='cvc' required>
+	</div>
+
+	<div class='form-row'>
+		<span>Expiration Date (MM/YYYY)</span>
+		<input type='text' size='2' data-stripe='exp-month' required>
+		<span> / </span>
+		<input type='text' size='4' data-stripe='exp-year' required>
+	</div>
+	<button ng-click='submit()' ng-disabled='hiddenButton || form.$invalid'>Submit</button>
+</form>
