@@ -14,8 +14,7 @@
 
 from flask import Flask, render_template, Response, request, jsonify, make_response, flash
 import time, datetime
-from mfabrik.zoho.crm import CRM
-from tf_utils import env, get_crm, get_stripe
+from tf_utils import env, get_crm
 from tf_utils.beautiful_soupcon_tf_zoho import ThinkfulPerson
 # from customerio import CustomerIO
 # from google_spreadsheet.api import SpreadsheetAPI
